@@ -32,7 +32,7 @@ function Banner() {
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPosition: "center center",
+        backgroundPosition: "center 40%",
       }}
     >
       <div className="ml-8 pt-36 h-48">
@@ -57,7 +57,7 @@ function Banner() {
           {truncate(movie?.overview, 150)}
         </h1>
       </div>
-      <div className="bg-gradient-to-b from-[#141414]/10 to-[#141414] h-28 absolute left-0 right-0 bottom-0" />
+      <div className="bg-gradient-to-b from-transparent via-[#141414]/70 to-[#141414] h-28 absolute left-0 right-0 bottom-0" />
     </header>
   );
 }
