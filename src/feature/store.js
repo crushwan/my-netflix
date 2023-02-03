@@ -1,6 +1,6 @@
 "use client";
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./counterSlice";
+import userReducer from "./userSlice";
 
 export const store = configureStore({
   reducer: {

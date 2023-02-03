@@ -7,7 +7,7 @@ function Nav() {
     <NavWrap>
       <div className="flex justify-between">
         <Link href={"/"}>
-          <div className="fixed top-1 left-0 pl-5 cursor-pointer w-20 h-8">
+          <div className="fixed top-1 left-0 pl-5 cursor-pointer w-24 h-10">
             <Image
               src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
               alt=""
@@ -18,7 +18,7 @@ function Nav() {
           </div>
         </Link>
         <Link href={"/profile"}>
-          <div className="fixed top-2 h-6 right-5 cursor-pointer w-7">
+          <div className="fixed top-2 h-7 right-5 cursor-pointer w-7">
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
               alt=""

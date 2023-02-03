@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 function NavWrap({ children }) {
@@ -20,9 +19,9 @@ function NavWrap({ children }) {
 
   return (
     <div
-      className={`${
+      className={`fixed top-0 p-6 w-full h-7 z-1 transition-all duration-500 ease-in ${
         show && "bg-[#141414]"
-      } fixed top-0 p-5 w-full h-7 z-1 transition-all duration-500 ease-in`}
+      }`}
     >
       {children}
     </div>

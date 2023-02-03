@@ -3,7 +3,7 @@ import { auth } from "@/lib/firebase";
 import HomeScreen from "./HomeScreen";
 import LoginScreen from "./LoginScreen";
 import { useEffect } from "react";
-import { login, logout, selectUser } from "@/feature/counterSlice";
+import { login, logout, selectUser } from "@/feature/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
 
