@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import toast from "react-hot-toast";
 
 function SignupScreen() {
   const emailRef = useRef(null);
@@ -13,23 +14,30 @@ function SignupScreen() {
   const register = (e) => {
     e.preventDefault();
 
+    const notification = toast.loading("Initialize Registration");
+
     createUserWithEmailAndPassword(
       auth,
       emailRef.current.value,
       passwordRef.current.value
     )
       .then((authUser) => {
-        console.log(authUser);
+        // console.log(authUser);
+        toast.success("Register Success, Click Sign In", {
+          id: notification,
+        });
       })
       .catch((err) => {
-        alert(
-          "The email is invalid! Type in your real email address or check if it is correctly formated and try again."
-        );
+        toast.error("Invalid Email.", {
+          id: notification,
+        });
       });
   };
 
   const signIn = (e) => {
     e.preventDefault();
+
+    const notification = toast.loading("Loading Authentication");
 
     signInWithEmailAndPassword(
       auth,
@@ -38,13 +46,15 @@ function SignupScreen() {
     )
       .then((authUser) => {
         // Signed in
-        console.log(authUser);
-        // ...
+        // console.log(authUser);
+        toast.success("Login Success", {
+          id: notification,
+        });
       })
       .catch((error) => {
-        alert(
-          "There is no user with corresponding credentials. Please try again."
-        );
+        toast.error("Please Sign Up.", {
+          id: notification,
+        });
       });
   };
 

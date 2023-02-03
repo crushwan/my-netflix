@@ -14,7 +14,7 @@ function LoginScreen() {
           "url('https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg')",
       }}
     >
-      <div className="loginScreen__background">
+      <div className="">
         <img
           className="fixed left-0 w-36 object-contain pl-5"
           src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
@@ -26,7 +26,7 @@ function LoginScreen() {
         >
           Sign In
         </button>
-        <div className="loginScreen__gradient" />
+        <div className="w-full h-screen z-1 bg-black/40 bg-gradient-to-t from-[#000000de]/0 via-[#000000]/60 to-[#000000de] " />
       </div>
 
       <div className="absolute top-[28%] mx-auto left-0 right-0 text-center z-1 text-white p-5">

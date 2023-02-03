@@ -5,7 +5,7 @@ import requests from "@/lib/Requests";
 
 function HomeScreen() {
   return (
-    <div className="homeScreen">
+    <div className="">
       <Nav />
       <Banner />
 

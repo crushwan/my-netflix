@@ -36,7 +36,7 @@ function Banner() {
       }}
     >
       <div className="ml-8 pt-36 h-48">
-        <h1 className="text-5xl font-extrabold pb-1">
+        <h1 className="text-5xl font-extrabold pb-2">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="">
